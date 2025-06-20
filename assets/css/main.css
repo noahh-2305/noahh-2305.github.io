@@ -3103,7 +3103,7 @@ input, select, textarea {
 
 /* Header h1 styles */
 #header h1 {
-	font-size: 6rem; /* larger main header */
+	font-size: 4.5rem; /* larger main header */
   margin-bottom: 0.2em;
 }
 
@@ -3126,7 +3126,7 @@ input, select, textarea {
 	top: 0.7em;
 }
 #header p {
-  font-size: 1.75rem;
+  font-size: 1.25rem;
   margin-bottom: 1.5em;
 }
 #header h1, #header p {
