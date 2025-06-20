@@ -4184,4 +4184,36 @@ input, select, textarea {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* subtle shadow */
 }
 
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: left;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 1rem;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.card p {
+  margin: 0 1rem 1rem 1rem;
+  font-size: 0.95rem;
+  color: #666;
+}
 
