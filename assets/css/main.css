@@ -3103,15 +3103,8 @@ input, select, textarea {
 
 /* Header h1 styles */
 #header h1 {
-	-moz-transition: opacity 0.2s ease-in-out, visibility 0.2s;
-	-webkit-transition: opacity 0.2s ease-in-out, visibility 0.2s;
-	-ms-transition: opacity 0.2s ease-in-out, visibility 0.2s;
-	transition: opacity 0.2s ease-in-out, visibility 0.2s;
-	border-bottom: 0;
-	font-size: 0.8em;
-	margin-bottom: 0;
-	opacity: 1;
-	visibility: visible;
+	font-size: 3.5rem; /* larger main header */
+  margin-bottom: 0.2em;
 }
 
 /* Link inside h1 */
@@ -3132,7 +3125,10 @@ input, select, textarea {
 	text-transform: uppercase;
 	top: 0.7em;
 }
-
+#header h1, #header p {
+  color: white !important; /* override any burnt orange */
+  font-weight: 700;
+}
 /* Nav link styles */
 #header nav a {
 	border: 0;
@@ -3175,6 +3171,10 @@ input, select, textarea {
 #header.alt h1 {
 	opacity: 0;
 	visibility: hidden;
+}
+#header p {
+  font-size: 1.5rem; /* subheader size */
+  margin-bottom: 1.2em;
 }
 
 /* Responsive styling */
