@@ -4169,16 +4169,19 @@ input, select, textarea {
 #photo-strip {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch; /* makes all images match height */
   padding: 0;
   margin: 0;
+  height: 35vh; /* sets fixed height for the strip */
+  overflow: hidden;
 }
 
 #photo-strip img {
-  width: 33.3333vw; /* 1/3 of viewport width each */
-  height: auto;
+  width: 33.3333vw; /* 1/3 of screen width */
+  height: 100%;     /* fill section height */
+  object-fit: cover; /* crop edges as needed */
   display: block;
-  object-fit: cover;
   margin: 0;
   padding: 0;
 }
+
