@@ -3066,7 +3066,7 @@ input, select, textarea {
 	/* Header */
 
 	#header {
-  background-image: url('../images/truk.jpg');
+  background-image: url('/images/truk.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
