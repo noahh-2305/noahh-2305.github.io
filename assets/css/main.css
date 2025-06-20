@@ -3065,9 +3065,17 @@ input, select, textarea {
 
 	/* Header */
 
-#header {
-	background-color: blue;
+	#header {
+  background-image: url('../images/truk.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: white;
+  position: relative;
 }
+
+
 
 /* Optional: Overlay to improve text visibility */
 #header::before {
