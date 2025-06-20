@@ -4166,19 +4166,22 @@ input, select, textarea {
 		}
 
 	}
-#photo-strip {
+#photo-stack {
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 0;
-  margin: 0;
+  align-items: stretch;
+  gap: 2rem; /* space between images */
+  padding: 2rem 4vw; /* space around the whole section */
+  background: #000; /* optional background to frame the images */
 }
 
-#photo-strip img {
-  width: 33.3333vw; /* 1/3 of viewport width each */
-  height: auto;
-  display: block;
-  object-fit: cover;
-  margin: 0;
-  padding: 0;
+#photo-stack img {
+  flex: 1 1 0;
+  max-width: 48%;      /* leave breathing room */
+  height: 400px;
+  object-fit: cover;   /* crop slightly if needed */
+  border-radius: 8px;  /* optional rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* subtle shadow */
 }
+
+
