@@ -4189,16 +4189,6 @@ input, select, textarea {
   display: block;
 }
 
-#photo-stack .bottom-row {
-  height: 25vh; /* slightly taller for drama */
-}
-
-#photo-stack .bottom-row img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
-}
 @media screen and (max-width: 768px) {
   #photo-stack .top-row {
     flex-direction: column;
@@ -4208,10 +4198,6 @@ input, select, textarea {
   #photo-stack .top-row img {
     width: 100%;
     height: 20vh;
-  }
-
-  #photo-stack .bottom-row {
-    height: 25vh;
   }
 }
 
