@@ -3066,21 +3066,19 @@ input, select, textarea {
 	/* Header */
 
 	#header {
-		display: flex;
+		 display: flex;
   flex-direction: column;
   justify-content: center; /* vertical centering */
   align-items: center;     /* horizontal centering */
-  text-align: center;      /* center text inside elements */
-  height: 100vh;           /* keep full viewport height */
+  text-align: center;
+  height: 100vh;
   position: relative;
-  color: white;
-  background-image: url('/images/truk.jpg');
+  color: white;  /* sets text color to white */
+  background-image: url('../../images/truk.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
-  color: white;
-  position: relative;
+  padding-top: 5vh; /* shifts content up a bit */
 }
 
 
