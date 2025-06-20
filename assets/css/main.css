@@ -4168,36 +4168,20 @@ input, select, textarea {
 	}
 #photo-stack {
   display: flex;
-  flex-direction: column;
-  gap: 0;
-  padding: 0;
-  margin: 0;
-  max-width: 100vw;
-  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem; /* space between images */
+  padding: 2rem 4vw; /* space around the whole section */
+  background: #000; /* optional background to frame the images */
 }
 
-#photo-stack .top-row {
-  display: flex;
-  gap: 0;
-  height: 20vh; /* nice and compact */
+#photo-stack img {
+  flex: 1 1 0;
+  max-width: 48%;      /* leave breathing room */
+  height: auto;
+  object-fit: cover;   /* crop slightly if needed */
+  border-radius: 8px;  /* optional rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* subtle shadow */
 }
 
-#photo-stack .top-row img {
-  width: 50%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
-}
-
-@media screen and (max-width: 768px) {
-  #photo-stack .top-row {
-    flex-direction: column;
-    height: auto;
-  }
-
-  #photo-stack .top-row img {
-    width: 100%;
-    height: 20vh;
-  }
-}
 
