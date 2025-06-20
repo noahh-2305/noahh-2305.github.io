@@ -3063,152 +3063,165 @@ input, select, textarea {
 
 /* Header */
 
+	/* Header */
+
+#header {
+	background-image: url('../images/truk.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	position: relative;
+	color: white;
+	height: 100vh; /* Full screen height */
+	overflow: hidden;
+}
+
+/* Optional: Overlay to improve text visibility */
+#header::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5); /* Adjust transparency */
+	z-index: 1;
+}
+
+/* Ensures header content appears above overlay */
+#header > * {
+	position: relative;
+	z-index: 2;
+}
+
+/* Header h1 styles */
+#header h1 {
+	-moz-transition: opacity 0.2s ease-in-out, visibility 0.2s;
+	-webkit-transition: opacity 0.2s ease-in-out, visibility 0.2s;
+	-ms-transition: opacity 0.2s ease-in-out, visibility 0.2s;
+	transition: opacity 0.2s ease-in-out, visibility 0.2s;
+	border-bottom: 0;
+	font-size: 0.8em;
+	margin-bottom: 0;
+	opacity: 1;
+	visibility: visible;
+}
+
+/* Link inside h1 */
+#header h1 a {
+	border: 0;
+}
+
+/* Nav styles */
+#header nav {
+	font-family: Raleway, Helvetica, sans-serif;
+	font-size: 0.8em;
+	font-weight: 700;
+	height: 3em;
+	letter-spacing: 0.1em;
+	line-height: 3em;
+	position: absolute;
+	right: 0.7em;
+	text-transform: uppercase;
+	top: 0.7em;
+}
+
+/* Nav link styles */
+#header nav a {
+	border: 0;
+	display: inline-block;
+	padding: 0 1em;
+}
+
+#header nav a:before {
+	float: right;
+	margin-left: 0.75em;
+}
+
+#header nav a[href="#menu"] {
+	text-decoration: none;
+	transition: background-color 0.2s ease-in-out;
+	border-radius: 5px;
+	box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.125);
+	padding: 0 1.35em;
+}
+
+#header nav a[href="#menu"]:before {
+	content: '\f0c9';
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	text-rendering: auto;
+}
+
+#header nav a[href="#menu"]:hover {
+	background-color: rgba(255, 255, 255, 0.025);
+}
+
+#header nav a[href="#menu"]:active {
+	background-color: rgba(255, 255, 255, 0.075);
+}
+
+#header.alt {
+	background-color: transparent;
+}
+
+#header.alt h1 {
+	opacity: 0;
+	visibility: hidden;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 736px) {
 	#header {
-		background-image: url('../images/truk.jpg');
-		background-size: cover;
-		background-position: center;
-		background-attachment: fixed; /* for parallax-like effect */
-		color: white;
+		height: auto;
+		padding: 2em 1em;
 	}
 
-		#header h1 {
-			-moz-transition: opacity 0.2s ease-in-out, visibility 0.2s;
-			-webkit-transition: opacity 0.2s ease-in-out, visibility 0.2s;
-			-ms-transition: opacity 0.2s ease-in-out, visibility 0.2s;
-			transition: opacity 0.2s ease-in-out, visibility 0.2s;
-			border-bottom: 0;
-			font-size: 0.8em;
-			margin-bottom: 0;
-			opacity: 1;
-			visibility: visible;
-		}
+	#header nav {
+		top: 0;
+		right: 0;
+		height: inherit;
+		line-height: inherit;
+	}
 
-			#header h1 a {
-				border: 0;
-			}
+	#header nav a {
+		height: inherit;
+		line-height: inherit;
+	}
 
-		#header nav {
-			font-family: Raleway, Helvetica, sans-serif;
-			font-size: 0.8em;
-			font-weight: 700;
-			height: 3em;
-			letter-spacing: 0.1em;
-			line-height: 3em;
-			position: absolute;
-			right: 0.7em;
-			text-transform: uppercase;
-			top: 0.7em;
-		}
+	#header nav a[href="#menu"] {
+		box-shadow: none;
+		padding: 0 1em;
+		border-radius: 0;
+	}
 
-			#header nav a {
-				border: 0;
-				display: inline-block;
-				padding: 0 1em;
-			}
+	#header nav a[href="#menu"]:hover,
+	#header nav a[href="#menu"]:active {
+		background-color: inherit;
+	}
+}
 
-				#header nav a:before {
-					float: right;
-					margin-left: 0.75em;
-				}
+@media screen and (max-width: 480px) {
+	#header nav a[href="#menu"] {
+		width: 4em;
+		white-space: nowrap;
+		text-indent: 4em;
+		position: relative;
+	}
 
-				#header nav a[href="#menu"] {
-					text-decoration: none;
-					-moz-transition: background-color 0.2s ease-in-out;
-					-webkit-transition: background-color 0.2s ease-in-out;
-					-ms-transition: background-color 0.2s ease-in-out;
-					transition: background-color 0.2s ease-in-out;
-					border-radius: 5px;
-					box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.125);
-					padding: 0 1.35em;
-				}
+	#header nav a[href="#menu"]:before {
+		width: inherit;
+		position: absolute;
+		top: 0;
+		left: 0;
+		text-indent: 0;
+		text-align: right;
+		margin-left: 0;
+		padding-right: 1.25em;
+	}
+}
 
-					#header nav a[href="#menu"]:before {
-						-moz-osx-font-smoothing: grayscale;
-						-webkit-font-smoothing: antialiased;
-						display: inline-block;
-						font-style: normal;
-						font-variant: normal;
-						text-rendering: auto;
-						line-height: 1;
-						text-transform: none !important;
-						font-family: 'Font Awesome 5 Free';
-						font-weight: 900;
-					}
-
-					#header nav a[href="#menu"]:before {
-						content: '\f0c9';
-						line-height: inherit;
-					}
-
-					#header nav a[href="#menu"]:hover {
-						background-color: rgba(255, 255, 255, 0.025);
-					}
-
-					#header nav a[href="#menu"]:active {
-						background-color: rgba(255, 255, 255, 0.075);
-					}
-
-		#header.alt {
-			background-color: transparent;
-		}
-
-			#header.alt h1 {
-				opacity: 0;
-				visibility: hidden;
-			}
-
-		@media screen and (max-width: 736px) {
-
-			#header {
-				height: 2.75em;
-				line-height: 2.75em;
-			}
-
-				#header nav {
-					top: 0;
-					right: 0;
-					height: inherit;
-					line-height: inherit;
-				}
-
-					#header nav a {
-						height: inherit;
-						line-height: inherit;
-					}
-
-						#header nav a[href="#menu"] {
-							box-shadow: none;
-							padding: 0 1em;
-							border-radius: 0;
-						}
-
-							#header nav a[href="#menu"]:hover, #header nav a[href="#menu"]:active {
-								background-color: inherit;
-							}
-
-		}
-
-		@media screen and (max-width: 480px) {
-
-			#header nav a[href="#menu"] {
-				width: 4em;
-				white-space: nowrap;
-				text-indent: 4em;
-				position: relative;
-			}
-
-				#header nav a[href="#menu"]:before {
-					width: inherit;
-					position: absolute;
-					top: 0;
-					left: 0;
-					text-indent: 0;
-					text-align: right;
-					margin-left: 0;
-					padding-right: 1.25em;
-				}
-
-		}
 
 /* Menu */
 
