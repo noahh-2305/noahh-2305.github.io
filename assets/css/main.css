@@ -3066,6 +3066,14 @@ input, select, textarea {
 	/* Header */
 
 	#header {
+		display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical centering */
+  align-items: center;     /* horizontal centering */
+  text-align: center;      /* center text inside elements */
+  height: 100vh;           /* keep full viewport height */
+  position: relative;
+  color: white;
   background-image: url('/images/truk.jpg');
   background-size: cover;
   background-position: center;
