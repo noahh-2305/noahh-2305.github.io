@@ -3066,14 +3066,11 @@ input, select, textarea {
 	/* Header */
 
 #header {
-	background-image: url('../images/truk.jpg');
-	  background-size: cover;
-	  background-position: center;
-	  background-repeat: no-repeat;
-	  background-attachment: scroll; /* safer for cross-browser testing */
-	  height: 100vh;
-	  color: white;
-	  position: relative;
+	background-image: url('../images/truk.jpg') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  height: 100vh !important;
 }
 
 /* Optional: Overlay to improve text visibility */
