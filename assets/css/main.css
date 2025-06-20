@@ -170,19 +170,14 @@ input, select, textarea {
 
 		}
 
-	a {
-		-moz-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		-webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		border-bottom: dotted 1px rgba(255, 255, 255, 0.35);
-		color: #ffffff;
-		text-decoration: none;
+	a, .button {
+		background-color: #BF5700;
+		color: white;
+		border: none;
 	}
 
-		a:hover {
-			border-bottom-color: transparent;
-			color: #ffffff !important;
+		a:hover, .button:hover{
+			background-color: #d87400
 		}
 
 		a.special:not(.button) {
@@ -250,13 +245,9 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
-		font-family: Raleway, Helvetica, sans-serif;
-		font-weight: 700;
-		letter-spacing: 0.1em;
-		margin: 0 0 1em 0;
-		text-transform: uppercase;
+	h2, h3 {
+		color: #BF5700;
+  		border-bottom: 2px solid #BF5700;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
