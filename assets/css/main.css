@@ -4178,7 +4178,7 @@ input, select, textarea {
 #photo-stack img {
   flex: 1 1 0;
   max-width: 48%;      /* leave breathing room */
-  height: 300px;
+  height: 400px;
   object-fit: cover;   /* crop slightly if needed */
   border-radius: 8px;  /* optional rounded corners */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* subtle shadow */
