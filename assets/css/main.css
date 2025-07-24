@@ -3722,7 +3722,7 @@ input, select, textarea {
 .card h3 {
   margin: 1rem;
   font-size: 1.25rem;
-  color: #333;
+  color: #000000;
 }
 
 .card p {
