@@ -4226,4 +4226,11 @@ h5 {
 hr.major:after {
   background: #ffffff !important;
 }
-
+.wrapper.style1:before,
+.wrapper.style2:before,
+.wrapper.style3:before,
+.wrapper.alt:before,
+.wrapper:before {
+  display: none !important;
+  content: none !important;
+}
