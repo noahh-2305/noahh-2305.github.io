@@ -4255,3 +4255,11 @@ hr.major:after {
   margin-bottom: 1em;
 }
 
+.wrapper:before {
+  content: '';
+  display: block;
+  height: 1px;
+  background: #ffffff;
+  margin: 2em 0;
+}
+
