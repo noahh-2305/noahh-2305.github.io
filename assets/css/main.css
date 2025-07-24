@@ -167,7 +167,7 @@ input, select, textarea {
 		}
 
 	a, .button {
-		background-color: #BF5700;
+		background-color: #000000;
 		color: white;
 		border: none;
 	}
@@ -242,8 +242,8 @@ input, select, textarea {
 	}
 
 	h2, h3 {
-		color: #BF5700;
-  		border-bottom: 2px solid #BF5700;
+		color: #000000;
+  		border-bottom: 2px solid #000000;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -4190,16 +4190,40 @@ input, select, textarea {
   color: #666;
 }
 
-body, #page-wrapper, .wrapper, .wrapper.style1, .wrapper.style2 {
-  background: #000000 !important;
+/* Global dark theme overrides */
+body,
+#wrapper,
+#page-wrapper,
+.wrapper,
+.wrapper.style1,
+.wrapper.style2,
+.wrapper.style3,
+.inner {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Fix links */
+a {
   color: #ffffff !important;
 }
 
-body a {
-  color: #ffffff;
+a:hover {
+  color: #cccccc !important;
 }
 
-body a:hover {
-  color: #cccccc;
+/* Optional: override section headers, hr, etc. */
+.major h2,
+h2,
+h3,
+h4,
+h5 {
+  color: #ffffff !important;
+}
+
+hr.major:after {
+  background: #ffffff !important;
 }
 
