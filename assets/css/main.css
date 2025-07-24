@@ -4234,3 +4234,24 @@ hr.major:after {
   display: none !important;
   content: none !important;
 }
+
+.card {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  text-align: center;
+}
+
+.card h3,
+.card p {
+  color: #000000;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 1em;
+}
+
