@@ -26,7 +26,7 @@
 				<!-- Header -->
 					<header id="header">
 						<h1>Hi, I'm Noah</h1>
-						<p>Mechanical Engineering Student @ UT Austin • Involved in FSAE and Solar Car • Aspiring Test Engineer </a></p>
+						<p>Mechanical Engineering Student @ UT Austin • Involved in FSAE, Solar Car, and Collegiate Rocketry • Aspiring Test Engineer </a></p>
 						<img src="images/weldbro.jpg" style="display: block; margin: 0 auto; width: 15%;"/>
 					</header>
 				<!--pictures-->
@@ -60,7 +60,7 @@
 					            <h2 class="major" style="text-align: center;">About Me</h2>
 						  </header>
 						  <ul>
-						    <img src="images/meinjapan.jpg" style="display: block; margin: 0 auto; width: 20%;"/>	  
+						    <img src="images/meinjapan.jpg" style="display: block; margin: 0 auto; width: 45%;"/>	  
 						    <p>I am a Mechanical Engineer with primary interests in engineering design, manufacturing, and troubleshooting, specifically within the automotive and aerospace sectors. As an undergraduate student at The University of Texas at Austin, I am heavily involved in various student and engineering organizations like Longhorn Racing Solar, Texas Rocket Engineering Lab, and the Longhorn Rocketry Association. I have experience in software like SolidWorks, Ansys Mechanical, and various coding languages, as well as hardware such as TIG welding and fabrication methods like lathing, manual milling, and CNC machining. This portfolio provides an overview of various work experiences, projects, and related activities that I have done since the start of my bachelor's program.</li>
 						  </ul>
 						</div>
@@ -73,21 +73,21 @@
 						    <div class="project-cards">
 						      <!-- Teaser 1 -->
 						      <div class="card">
-						        <img src="images/frame1.png" alt="Project 1" style= width: 30%;"/>
+						        <img src="images/frame1.png" alt="Project 1" class="card-image"/>
 						        <h3>Competing in Solar Car</h3>
 						        <p>Two years of experience with chassis design, simulation, and fabrication, with leadership over Body and Ergonomics systems for the Fall '25 semester.</p>
 						      </div>
 						
 						      <!-- Teaser 2 -->
 						      <div class="card">
-						        <img src="images/nozzle1.png" alt="Project 2" style= width: 30%;" />
+						        <img src="images/nozzle1.png" alt="Project 2" class="card-image"/>
 						        <h3>Diving into Rocketry Projects</h3>
 						        <p>Assisted in orifice testing on extreme pressure fittings for liquid engine pressurant tanks and drafted preliminary design and materials decision matrix for hybrid engine nozzle. </p>
 						      </div>
 						
 						      <!-- Teaser 3 -->
 						      <div class="card">
-						        <img src="images/honda.jpg" alt="Project 3" style= width: 30%;"/>
+						        <img src="images/honda.jpg" alt="Project 3" class="card-image"/>
 						        <h3>Exploring Automotive Passions at Home</h3>
 						        <p>Performed suspension, powertrain, and electronic upgrades, with a custom street-tested tune, across my two vehicles. </p>
 						      </div>
@@ -100,6 +100,31 @@
 						  </div>
 						</section>
 
+						<section id="prof" class="wrapper style2">
+						  <div class="inner">
+						    <header class="major">
+						      <h2 style="text-align: center;">Professional Experiences</h2>
+						    </header>
+						      <div class="project-cards">
+							      
+							<div class="card">
+						         <img src="images/vgtt.jpg" alt="Experience 1" class="card-image"/>
+						         <h3>Powertrain Integration Co-Op</h3>
+						         <p>Responsible for truck calibration, engine testing, CAN data analysis, and validation of upcoming software/hardware packages for NA diesel truck models.</p>
+						        </div>
+
+							<div class="card">
+							 <img src="images/dtna.png" alt="Project 2" class="card-image"/>
+							 <h3>Product Testing Mechatronics Intern</h3>
+							 <p>Created custom transcription and tagging scripts with python logic and SQL backend for easier indexing and metadata extraction from test engineering CAN data.</p>
+							</div>
+						       </div>
+							  
+						       <ul class="actions" style="display: flex; justify-content: center; padding-left: 0; list-style: none;">
+						        <li><a href="projects.html" class="button primary">See All Experience</a></li>
+						       </ul>
+	
+						</section>
 
 						<!-- Skills -->
 						<section id="skills" class="wrapper">
@@ -165,6 +190,27 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+		<div id="lightbox" style="display:none; position:fixed; z-index:9999; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); justify-content:center; align-items:center;">
+		  <img id="lightbox-img" src="" alt="Full-size view" style="max-width:90%; max-height:90%; border-radius:10px;">
+		</div>
+		
+		<script>
+		  const lightbox = document.getElementById("lightbox");
+		  const lightboxImg = document.getElementById("lightbox-img");
+		
+		  document.querySelectorAll(".card img").forEach(img => {
+		    img.addEventListener("click", () => {
+		      lightbox.style.display = "flex";
+		      lightboxImg.src = img.src;
+		    });
+		  });
+		
+		  lightbox.addEventListener("click", () => {
+		    lightbox.style.display = "none";
+		    lightboxImg.src = "";
+		  });
+		</script>
 
 	</body>
 </html>
