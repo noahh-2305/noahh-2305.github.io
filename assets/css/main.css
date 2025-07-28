@@ -3822,3 +3822,13 @@ hr.major:after {
   padding: 2em;
 }
 
+/* Standardize all section titles */
+.wrapper header.major h2,
+.wrapper h2.major {
+  font-size: 2.25rem; /* Adjust size to taste */
+  margin-bottom: 1.5rem;
+  border-bottom: none; /* Remove line */
+  padding-bottom: 0;
+  text-align: center;  /* Optional, if you want all centered */
+}
+
