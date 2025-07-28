@@ -3732,10 +3732,13 @@ a:hover {
 /* Optional: override section headers, hr, etc. */
 .major h2,
 h2,
-h3,
 h4,
 h5 {
   color: #ffffff !important;
+}
+
+.major h3{
+	color: #000000 !important;
 }
 
 hr.major:after {
