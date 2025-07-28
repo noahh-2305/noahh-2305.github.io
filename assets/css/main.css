@@ -3780,15 +3780,23 @@ hr.major:after {
 }
 
 .card img {
-  width: 100%;
+  display: block;
+  max-width: 100%;
   height: auto;
-  max-height: 180px;
-  object-fit: contain; /* shrink to fit the box without cropping */
-  border-radius: 5px;
-  margin-bottom: 1em;
+  max-height: 200px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 8px;
+  margin: 0 auto 1rem auto;
 }
+
 
 .card p {
   color: #000000;
 }
 
+.card h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center; 
+}
