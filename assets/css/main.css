@@ -3780,16 +3780,18 @@ hr.major:after {
 }
 
 .card img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  max-height: 200px;
+  width: 100%;
+  max-height: 150px;
   object-fit: contain;
   object-position: center;
   border-radius: 8px;
-  margin: 0 auto 1rem auto;
+  cursor: pointer; /* so it looks clickable */
+  transition: transform 0.2s ease;
 }
 
+.card img:hover {
+  transform: scale(1.02);
+}
 
 .card p {
   color: #000000;
