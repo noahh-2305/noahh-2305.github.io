@@ -3732,14 +3732,16 @@ a:hover {
 /* Optional: override section headers, hr, etc. */
 .major h2,
 h2,
+h3,
 h4,
 h5 {
   color: #ffffff !important;
 }
 
-.major h3{
-	color: #000000 !important;
+.card h3 {
+  color: #000000 !important;
 }
+
 
 hr.major:after {
   background: #ffffff !important;
@@ -3785,7 +3787,6 @@ hr.major:after {
   margin-bottom: 1em;
 }
 
-.card h3,
 .card p {
   color: #000000;
 }
