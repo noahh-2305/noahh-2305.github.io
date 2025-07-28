@@ -3781,8 +3781,9 @@ hr.major:after {
 
 .card img {
   width: 100%;
-  height: 180px;
-  object-fit: cover;
+  height: auto;
+  max-height: 180px;
+  object-fit: contain; /* shrink to fit the box without cropping */
   border-radius: 5px;
   margin-bottom: 1em;
 }
