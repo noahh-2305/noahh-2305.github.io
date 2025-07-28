@@ -3802,3 +3802,23 @@ hr.major:after {
   font-weight: bold;
   text-align: center; 
 }
+
+#footer .inner {
+  text-align: center;
+}
+
+#footer .contact {
+  display: inline-block;
+  text-align: left;
+}
+
+#footer .contact li {
+  margin: 0.5em 1em;
+}
+
+#aboutme .inner {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2em;
+}
+
