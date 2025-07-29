@@ -3070,12 +3070,6 @@ input, select, textarea {
   padding-top: 15vh;
 }
 
-#project-header h1 {
-  font-size: 3rem;
-  text-shadow: 0 2px 10px rgba(0,0,0,0.4);
-}
-
-
 /* Optional: Overlay to improve text visibility */
 #header::before {
 	content: '';
@@ -3173,6 +3167,109 @@ input, select, textarea {
   font-size: 1.5rem; /* subheader size */
   margin-bottom: 1.2em;
 }
+
+/* Optional: Overlay to improve text visibility */
+#project-header::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5); /* Adjust transparency */
+	z-index: 1;
+}
+
+/* Ensures header content appears above overlay */
+#project-header > * {
+	position: relative;
+	z-index: 2;
+}
+
+/* Header h1 styles */
+#project-header h1 {
+	font-size: 4.5rem; /* larger main header */
+	margin-bottom: 0.2em;
+}
+
+/* Link inside h1 */
+#project-header h1 a {
+	border: 0;
+}
+
+/* Nav styles */
+#project-header nav {
+	font-family: Raleway, Helvetica, sans-serif;
+	font-size: 0.8em;
+	font-weight: 700;
+	height: 3em;
+	letter-spacing: 0.1em;
+	line-height: 3em;
+	position: absolute;
+	right: 0.7em;
+	text-transform: uppercase;
+	top: 0.7em;
+}
+
+#project-header p {
+	font-size: 1rem;
+	margin-bottom: 1.5em;
+}
+
+#project-header h1, #project-header p {
+	color: white !important; /* override any burnt orange */
+	font-weight: 700;
+}
+
+/* Nav link styles */
+#project-header nav a {
+	border: 0;
+	display: inline-block;
+	padding: 0 1em;
+}
+
+#project-header nav a:before {
+	float: right;
+	margin-left: 0.75em;
+}
+
+#project-header nav a[href="#menu"] {
+	text-decoration: none;
+	transition: background-color 0.2s ease-in-out;
+	border-radius: 5px;
+	box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.125);
+	padding: 0 1.35em;
+}
+
+#project-header nav a[href="#menu"]:before {
+	content: '\f0c9';
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	text-rendering: auto;
+}
+
+#project-header nav a[href="#menu"]:hover {
+	background-color: rgba(255, 255, 255, 0.025);
+}
+
+#project-header nav a[href="#menu"]:active {
+	background-color: rgba(255, 255, 255, 0.075);
+}
+
+#project-header.alt {
+	background-color: transparent;
+}
+
+#project-header.alt h1 {
+	opacity: 0;
+	visibility: hidden;
+}
+
+#project-header p {
+	font-size: 1.5rem; /* subheader size */
+	margin-bottom: 1.2em;
+}
+
 
 /* Responsive styling */
 @media screen and (max-width: 736px) {
