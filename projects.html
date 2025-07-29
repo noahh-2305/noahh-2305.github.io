@@ -67,6 +67,44 @@
 		  </div>
 		</section>
 
+	    
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+		<div id="lightbox" style="display:none; position:fixed; z-index:9999; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); justify-content:center; align-items:center;">
+		  <img id="lightbox-img" src="" alt="Full-size view" style="max-width:90%; max-height:90%; border-radius:10px;">
+		</div>
+
+		<script>
+		  const hamburger = document.getElementById('hamburger');
+		  const menu = document.getElementById('fullscreen-menu');
+		
+		  hamburger.addEventListener('click', () => {
+		    menu.classList.toggle('active');
+		  });
+		</script>
+
+		
+		<script>
+		  const lightbox = document.getElementById("lightbox");
+		  const lightboxImg = document.getElementById("lightbox-img");
+		
+		  document.querySelectorAll(".card img").forEach(img => {
+		    img.addEventListener("click", () => {
+		      lightbox.style.display = "flex";
+		      lightboxImg.src = img.src;
+		    });
+		  });
+		
+		  lightbox.addEventListener("click", () => {
+		    lightbox.style.display = "none";
+		    lightboxImg.src = "";
+		  });
+		</script>
     
   </body>
 </html>
