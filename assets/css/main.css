@@ -4036,3 +4036,42 @@ hr.major:after {
   opacity: 1;
   pointer-events: auto;
 }
+
+.project-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3em 0;
+  flex-wrap: wrap; /* optional, helps with responsiveness */
+  padding: 0 1em;
+}
+
+.project-block.reverse {
+  flex-direction: row-reverse;
+}
+
+.project-left,
+.project-right {
+  flex: 1 1 50%;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+.project-left img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  max-width: 600px;
+}
+
+.project-right h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+
+.project-right p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
