@@ -3054,6 +3054,26 @@ input, select, textarea {
   padding-top: 15vh; /* shifts content up a bit */
 }
 
+#project-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  height: 60vh;
+  position: relative;
+  color: white;
+  background-image: url('../../images/nissanmodels.jpg'); /* change this */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 15vh;
+}
+
+#project-header h1 {
+  font-size: 3rem;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.4);
+}
 
 
 /* Optional: Overlay to improve text visibility */
