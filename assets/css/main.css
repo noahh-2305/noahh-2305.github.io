@@ -3848,7 +3848,7 @@ hr.major:after {
 }
 
 #photo-stack img {
-  width: 60%;
+  width: 80%;
   max-width: 320px;
   height: auto;
   object-fit: cover;
