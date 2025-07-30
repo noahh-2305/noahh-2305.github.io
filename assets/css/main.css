@@ -4039,97 +4039,110 @@ hr.major:after {
 
 .project-section {
   display: flex;
-  padding: 4rem 2rem;
+  flex-direction: row;
+  gap: 4rem;
+  margin: 5vh 5vw;
   align-items: flex-start;
-  gap: 3rem;
+}
+
+.section-image {
+  flex: 1;
+  text-align: center;
 }
 
 .section-image img {
-  width: 400px;
   max-width: 100%;
-  border-radius: 1rem;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  height: auto;
+  border-radius: 10px;
+}
+
+.section-title {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: #333;
 }
 
 .timeline {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  flex: 2;
   position: relative;
+  padding: 2rem 0;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #ccc;
+  transform: translateX(-50%);
 }
 
 .timeline-item {
+  width: 50%;
   position: relative;
+  margin: 2rem 0;
+}
+
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+  padding-right: 2rem;
+}
+
+.timeline-item.right {
+  left: 50%;
+  text-align: left;
   padding-left: 2rem;
-}
-
-.timeline-item::before {
-  content: "";
-  position: absolute;
-  left: 0.5rem;
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background: #ccc;
-}
-
-.date {
-  font-weight: bold;
-  color: #555;
-  margin-bottom: 0.5rem;
 }
 
 .timeline-thumb {
   width: 150px;
   height: auto;
+  border-radius: 10px;
   cursor: pointer;
-  border-radius: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   transition: transform 0.2s ease;
 }
 .timeline-thumb:hover {
   transform: scale(1.05);
 }
 
-/* Modal */
+.date {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+/* Modal Styles */
 .modal {
   display: none;
   position: fixed;
-  z-index: 9999;
-  top: 0; left: 0;
-  width: 100vw;
-  height: 100vh;
+  z-index: 10;
+  left: 0; top: 0;
+  width: 100vw; height: 100vh;
   background: rgba(0,0,0,0.8);
-  backdrop-filter: blur(5px);
   justify-content: center;
   align-items: center;
 }
 
 .modal-content {
-  background: white;
+  background: #fff;
   padding: 2rem;
-  border-radius: 1rem;
+  border-radius: 12px;
+  max-width: 80%;
   text-align: center;
-  max-width: 600px;
-  width: 90%;
 }
 
 .modal-content img {
-  width: 100%;
-  border-radius: 1rem;
-  margin-bottom: 1rem;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 .modal-content p {
-  color: #333;
+  margin-top: 1rem;
   font-size: 1rem;
+  color: #333;
 }
-
-.timeline-item:nth-child(even) {
-  align-self: flex-end;
-  text-align: right;
-}
-.timeline-item:nth-child(even) .timeline-thumb {
-  float: right;
-}
-
