@@ -41,25 +41,38 @@
   			  </nav>
   			</div>
 
-	         <section class="project-block">
-		  <div class="project-left">
-		    <img src="images/frame1.png" alt="Project 1">
+	        <section class="project-section">
+		  <div class="section-image">
+		    <img src="your-main-image.jpg" alt="Main Project Image">
 		  </div>
-		  <div class="project-right">
-		    <h2><strong>Longhorn Racing Solar</strong></h2>
-		    <p>Short description of your project here.</p>
+		  <div class="timeline">
+		    <div class="timeline-item">
+		      <span class="date">2023</span>
+		      <img src="project1-thumb.jpg" alt="Project 1" class="timeline-thumb" onclick="openModal('modal1')">
+		    </div>
+		    <div class="timeline-item">
+		      <span class="date">2024</span>
+		      <img src="project2-thumb.jpg" alt="Project 2" class="timeline-thumb" onclick="openModal('modal2')">
+		    </div>
+		    <!-- Add more items -->
 		  </div>
 		</section>
 		
-		<section class="project-block reverse">
-		  <div class="project-left">
-		    <img src="images/halcyon.jpg" alt="Project 2">
+		<!-- Modals -->
+		<div id="modal1" class="modal" onclick="closeModal('modal1')">
+		  <div class="modal-content">
+		    <img src="project1-full.jpg" alt="Project 1">
+		    <p>Description about Project 1.</p>
 		  </div>
-		  <div class="project-right">
-		    <h2><strong>Texas Rocket Engineering Lab and Longhorn Rocketry Association</strong></h2>
-		    <p>Description for another project.</p>
+		</div>
+		
+		<div id="modal2" class="modal" onclick="closeModal('modal2')">
+		  <div class="modal-content">
+		    <img src="project2-full.jpg" alt="Project 2">
+		    <p>Description about Project 2.</p>
 		  </div>
-		</section>
+		</div>
+
 
          
 	    
@@ -74,6 +87,16 @@
 		  <img id="lightbox-img" src="" alt="Full-size view" style="max-width:90%; max-height:90%; border-radius:10px;">
 		</div>
 	  </div>
+
+		<script>
+		function openModal(id) {
+		  document.getElementById(id).style.display = "flex";
+		}
+		function closeModal(id) {
+		  document.getElementById(id).style.display = "none";
+		}
+		</script>
+
 		<script>
 		  const hamburger = document.getElementById('hamburger');
 		  const menu = document.getElementById('fullscreen-menu');
