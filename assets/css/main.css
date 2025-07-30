@@ -4037,41 +4037,99 @@ hr.major:after {
   pointer-events: auto;
 }
 
-.project-block {
+.project-section {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 3em 0;
-  flex-wrap: wrap; /* optional, helps with responsiveness */
-  padding: 0 1em;
+  padding: 4rem 2rem;
+  align-items: flex-start;
+  gap: 3rem;
 }
 
-.project-block.reverse {
-  flex-direction: row-reverse;
+.section-image img {
+  width: 400px;
+  max-width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-.project-left,
-.project-right {
-  flex: 1 1 50%;
-  padding: 1em;
-  box-sizing: border-box;
+.timeline {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
 }
 
-.project-left img {
-  width: 100%;
+.timeline-item {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: 0.5rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #ccc;
+}
+
+.date {
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-thumb {
+  width: 150px;
   height: auto;
-  border-radius: 8px;
-  object-fit: cover;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: transform 0.2s ease;
+}
+.timeline-thumb:hover {
+  transform: scale(1.05);
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.8);
+  backdrop-filter: blur(5px);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
   max-width: 600px;
+  width: 90%;
 }
 
-.project-right h2 {
-  font-size: 2rem;
-  margin-bottom: 0.5em;
+.modal-content img {
+  width: 100%;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
 }
 
-.project-right p {
-  font-size: 1.1rem;
-  line-height: 1.6;
+.modal-content p {
+  color: #333;
+  font-size: 1rem;
+}
+
+.timeline-item:nth-child(even) {
+  align-self: flex-end;
+  text-align: right;
+}
+.timeline-item:nth-child(even) .timeline-thumb {
+  float: right;
 }
 
