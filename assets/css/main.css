@@ -4119,20 +4119,27 @@ hr.major:after {
 .modal {
   display: none;
   position: fixed;
-  z-index: 10;
-  left: 0; top: 0;
-  width: 100vw; height: 100vh;
-  background: rgba(0,0,0,0.8);
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.6);
   justify-content: center;
   align-items: center;
 }
 
 .modal-content {
+  position: relative;
   background: #fff;
   padding: 2rem;
   border-radius: 12px;
   max-width: 80%;
+  max-height: 80%;
+  overflow-y: auto;
   text-align: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
 .modal-content img {
@@ -4145,4 +4152,15 @@ hr.major:after {
   margin-top: 1rem;
   font-size: 1rem;
   color: #333;
+}
+
+/* Close button */
+.close-button {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
 }
