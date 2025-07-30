@@ -66,26 +66,31 @@
 		</section>
 		
 		<!-- Modal Structure -->
-		<div id="modal1" class="modal" onclick="closeModal('modal1')" style="width: 45%;">
-		  <div class="modal-content">
-		    <img src="images/hub.jpg" alt="Large Project 1">
-		    <p>Designed front upright and hub interface for solar car chassis, ensuring optimal alignment and serviceability.</p>
-		  </div>
-		</div>
-		
-		<div id="modal2" class="modal" onclick="closeModal('modal2')" style="width: 45%;">
-		  <div class="modal-content">
-		    <img src="images/framecadini.jpg" alt="Large Project 2">
-		    <p>Fabricated full 4130 steel frame using TIG welding. Jig setup prioritized tolerance and crash structure design.</p>
-		  </div>
-		</div>
+		<!-- Modal Structure -->
+			<div id="modal1" class="custom-modal" onclick="closeModal('modal1')">
+			  <span class="close-button" onclick="closeModal('modal1'); event.stopPropagation();">&times;</span>
+			  <div class="modal-content">
+			    <img src="images/hub.jpg" alt="Large Project 1" class="modal-image">
+			    <p class="modal-caption">Designed front upright and hub interface for solar car chassis, ensuring optimal alignment and serviceability.</p>
+			  </div>
+			</div>
+			
+			<div id="modal2" class="custom-modal" onclick="closeModal('modal2')">
+			  <span class="close-button" onclick="closeModal('modal2'); event.stopPropagation();">&times;</span>
+			  <div class="modal-content">
+			    <img src="images/framecadini.jpg" alt="Large Project 2" class="modal-image">
+			    <p class="modal-caption">Fabricated full 4130 steel frame using TIG welding. Jig setup prioritized tolerance and crash structure design.</p>
+			  </div>
+			</div>
+			
+			<div id="modal3" class="custom-modal" onclick="closeModal('modal3')">
+			  <span class="close-button" onclick="closeModal('modal3'); event.stopPropagation();">&times;</span>
+			  <div class="modal-content">
+			    <img src="images/framejigged.jpg" alt="Large Project 3" class="modal-image">
+			    <p class="modal-caption">Fabricated full 4130 steel frame using TIG welding. Jig setup prioritized tolerance and crash structure design.</p>
+			  </div>
+			</div>
 
-		<div id="modal2" class="modal" onclick="closeModal('modal2')" style="width: 45%;">
-		  <div class="modal-content">
-		    <img src="images/framejigged.jpg" alt="Large Project 2">
-		    <p>Fabricated full 4130 steel frame using TIG welding. Jig setup prioritized tolerance and crash structure design.</p>
-		  </div>
-		</div>
 	    
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
