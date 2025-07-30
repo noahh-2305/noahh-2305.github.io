@@ -44,37 +44,41 @@
 	        <section class="project-section">
 		  <div class="section-image">
 		    <img src="images/frame1.png" alt="Main Project Image">
+		    <h2 class="section-title">UT Solar Car – Frame Design</h2>
 		  </div>
+		
 		  <div class="timeline">
-		    <div class="timeline-item">
+		    <div class="timeline-line"></div>
+		
+		    <div class="timeline-item left">
 		      <span class="date">Fall 2023</span>
 		      <img src="images/hub.jpg" alt="Project 1" class="timeline-thumb" onclick="openModal('modal1')">
 		    </div>
-		    <div class="timeline-item">
+		
+		    <div class="timeline-item right">
 		      <span class="date">Spring 2024</span>
 		      <img src="images/framejigged.jpg" alt="Project 2" class="timeline-thumb" onclick="openModal('modal2')">
 		    </div>
-		    <!-- Add more items -->
+		    
+		    <!-- Add more timeline-items here -->
 		  </div>
 		</section>
 		
-		<!-- Modals -->
+		<!-- Modal Structure -->
 		<div id="modal1" class="modal" onclick="closeModal('modal1')">
 		  <div class="modal-content">
-		    <img src="project1-full.jpg" alt="Project 1">
-		    <p>Description about Project 1.</p>
+		    <img src="images/hub.jpg" alt="Large Project 1">
+		    <p>Designed front upright and hub interface for solar car chassis, ensuring optimal alignment and serviceability.</p>
 		  </div>
 		</div>
 		
 		<div id="modal2" class="modal" onclick="closeModal('modal2')">
 		  <div class="modal-content">
-		    <img src="project2-full.jpg" alt="Project 2">
-		    <p>Description about Project 2.</p>
+		    <img src="images/framejigged.jpg" alt="Large Project 2">
+		    <p>Fabricated full 4130 steel frame using TIG welding. Jig setup prioritized tolerance and crash structure design.</p>
 		  </div>
 		</div>
 
-
-         
 	    
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
@@ -90,10 +94,11 @@
 
 		<script>
 		function openModal(id) {
-		  document.getElementById(id).style.display = "flex";
+		  document.getElementById(id).style.display = 'flex';
 		}
+		
 		function closeModal(id) {
-		  document.getElementById(id).style.display = "none";
+		  document.getElementById(id).style.display = 'none';
 		}
 		</script>
 
