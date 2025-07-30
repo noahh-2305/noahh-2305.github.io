@@ -4116,33 +4116,47 @@ hr.major:after {
 }
 
 /* Modal Styles */
-.modal {
+/* Modal overlay and blur */
+.custom-modal {
   display: none;
   position: fixed;
-  z-index: 10;
-  left: 0; top: 0;
-  width: 100vw; height: 100vh;
-  background: rgba(0,0,0,0.8);
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.4);
   justify-content: center;
   align-items: center;
 }
 
-.modal-content {
-  background: #fff;
-  padding: 2rem;
-  border-radius: 12px;
+/* Modal content */
+.modal-image {
   max-width: 80%;
-  text-align: center;
-}
-
-.modal-content img {
-  max-width: 100%;
-  height: auto;
+  max-height: 80vh;
   border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+  display: block;
+  margin: auto;
 }
 
-.modal-content p {
-  margin-top: 1rem;
+.modal-caption {
+  color: #fff;
+  text-align: center;
+  margin-top: 12px;
   font-size: 1rem;
-  color: #333;
 }
+
+/* Close button */
+.close-button {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1001;
+}
+
