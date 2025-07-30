@@ -4157,10 +4157,15 @@ hr.major:after {
 /* Close button */
 .close-button {
   position: absolute;
-  top: 12px;
-  right: 18px;
-  font-size: 2rem;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
   font-weight: bold;
-  color: #333;
+  color: black;
   cursor: pointer;
+  z-index: 1001;
+}
+
+.close-button:hover {
+  color: darkred;
 }
