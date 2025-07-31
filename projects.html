@@ -20,7 +20,7 @@
   				<!-- Header -->
   					<header id="project-header">
   						<h1>My Projects</h1></h1>
-  						<p>Explore my hands-on work in engineering and creating.</a></p>
+  						<p>Explore my hands-on work in engineering and creating. Click on the pictures throughout the timeline for a closer look.</a></p>
   					</header>
   				<!-- Hamburger Icon -->
   			<div id="hamburger" class="hamburger">
@@ -58,14 +58,19 @@
 		
 		    <div class="timeline-item right">
 		      <span class="date"><strong>Spring 2024: Frame Subsystem Lead</strong></span>
+		      <img src="images/2024sims.png" alt="Project 2" class="timeline-thumb" onclick="openModal('modal4')" style="width: 45%;">
 		      <img src="images/framejigged.jpg" alt="Project 2" class="timeline-thumb" onclick="openModal('modal3')" style="width: 45%;">
 		    </div>
-		    
+
+		    <div class="timeline-item left">
+		      <span class="date"><strong>Summer 2024: Body System Lead</strong></span>
+		      <img src="images/hub.jpg" alt="Project 1" class="timeline-thumb" onclick="openModal('modal1')" style="width: 45%;">
+		      <img src="images/framecadini.jpg" alt="Project 1" class="timeline-thumb" onclick="openModal('modal2')" style="width: 45%;">
+		    </div>
 		    <!-- Add more timeline-items here -->
 		  </div>
 		</section>
 		
-		<!-- Modal Structure -->
 		<!-- Modal Structure -->
 		<div id="modal1" class="modal" onclick="closeModal('modal1')">
 		  <div class="modal-content" onclick="event.stopPropagation();">
@@ -87,11 +92,34 @@
 		  <div class="modal-content" onclick="event.stopPropagation();">
 		    <span class="close-button" onclick="closeModal('modal3')">&times;</span>
 		    <img src="images/framejigged.jpg" alt="Large Project 3" style="width: 45%;">
-		    <p>After becoming Frame Subsystem Lead in February 2024, I led the frame’s construction using TIG welding and custom-built jigs made from laser-cut wood and lathed aluminum pins. These jigs held the tubes in alignment, helping us maintain tight tolerances and dimensional accuracy throughout the welding process.</p>
+		    <p>In preparation for the Longhorn Racing Unveiling event, I led the frame’s construction using TIG welding and custom-built jigs made from laser-cut wood and lathed aluminum pins. These jigs held the tubes in alignment, helping us maintain tight tolerances and dimensional accuracy throughout the welding process.</p>
 		  </div>
 		</div>
 
-			
+		<div id="modal4" class="modal" onclick="closeModal('modal4')">
+		  <div class="modal-content" onclick="event.stopPropagation();">
+		    <span class="close-button" onclick="closeModal('modal4')">&times;</span>
+		    <img src="images/2024sims.png" alt="Large Project 4" style="width: 45%;">
+		    <p>After becoming Frame Subsystem Lead in February 2024, I used Ansys Mechanical, refining my mesh strategies to improve stress accuracy at critical joints of our frame design. I work to ensure our frame passed conservative FEA load cases to meet competition regulations and safe for road use.</p>
+		  </div>
+		</div>
+
+		<div id="modal5" class="modal" onclick="closeModal('modal5')">
+		  <div class="modal-content" onclick="event.stopPropagation();">
+		    <span class="close-button" onclick="closeModal('modal5')">&times;</span>
+		    <img src="images/sandwichpanel.gif" alt="Large Project 5" style="width: 45%;">
+		    <p>My first project as Body Systems Lead was creating detailed documentation for both the Frame and Ergonomics subsystems. This became the foundation for our knowledge base, helping new team members get up to speed quickly. Check out this documentation at <a href="https://cloud.wikis.utexas.edu/wiki/external/YTRhMDdmNjlhZjZkNGM3YThjMDUyOGExN2YwODBhMjk">Frame 101: A Guide to the Frame Subsystem</a> and <a href="https://cloud.wikis.utexas.edu/wiki/external/YmMyOWQ4N2NjM2YzNGQ0ZjgyZDM3NmExN2JmMmVhOGE">Ergo 101: A Guide to the Ergo Subsystem</a></p>
+		    <p></p>  
+		  </div>
+		</div>
+
+		<div id="modal6" class="modal" onclick="closeModal('modal6')">
+		  <div class="modal-content" onclick="event.stopPropagation();">
+		    <span class="close-button" onclick="closeModal('modal6')">&times;</span>
+		    <img src="images/frame101.png" alt="Large Project 6" style="width: 45%;">
+		    <p>Starting the new build cycle, I set out to bring composites into our chassis design to boost stiffness-to-weight performance and grow our team’s understanding of composite structures. Using Ansys Mechanical’s ACP tools, I explored carbon fiber–foam panel simulations and testing setups like 3-point bending to guide future designs.</p>
+		  </div>
+		</div>
 	    
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
