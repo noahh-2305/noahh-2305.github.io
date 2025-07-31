@@ -4169,3 +4169,41 @@ hr.major:after {
 .close-button:hover {
   color: darkred;
 }
+
+.project-single-section {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin: 5vh 5vw;
+  flex-wrap: wrap; /* for better responsiveness on smaller screens */
+}
+
+.project-text {
+  flex: 1;
+  min-width: 280px; /* ensures text doesn't get too narrow */
+}
+
+.project-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.project-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.project-image {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+
+.project-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
