@@ -3079,7 +3079,7 @@ input, select, textarea {
   height: 60vh;
   position: relative;
   color: white;
-  background-image: url('../../images/toyotamuse.jpg'); /* change this */
+  background-image: url('../../images/toyotamus.jpg'); /* change this */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
