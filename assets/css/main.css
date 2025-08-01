@@ -4409,7 +4409,7 @@ hr.major:after {
 }
 
 .my-scaled-img {
-  transform: scale(2) translateY(20px); /* or -10px to move up */
+  transform: scale(2) translateY(40px); /* or -10px to move up */
   transform-origin: center;
 }
 
