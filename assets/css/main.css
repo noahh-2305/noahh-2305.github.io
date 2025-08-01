@@ -3070,6 +3070,22 @@ input, select, textarea {
   padding-top: 15vh;
 }
 
+#experience-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  height: 60vh;
+  position: relative;
+  color: white;
+  background-image: url('../../images/toyotamuse.jpg'); /* change this */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 15vh;
+}
+
 /* Optional: Overlay to improve text visibility */
 #header::before {
 	content: '';
