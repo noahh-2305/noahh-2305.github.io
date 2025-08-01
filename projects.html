@@ -44,6 +44,7 @@
 	        <section class="project-section">
 		  <div class="section-image">
 		    <img src="images/frame1.png" alt="Main Project Image" style="width: 120%;">
+	            <img src="images/solarcar.gif" alt="Main Project Image">
 		    <h2 class="section-title"><strong>Longhorn Racing Solar</strong></h2>
 		  </div>
 		
@@ -63,11 +64,20 @@
 		    </div>
 
 		    <div class="timeline-item left">
-		      <span class="date"><strong>Summer 2024: Body System Lead</strong></span>
+		      <span class="date"><strong>Summer 2024: FSGP Competition and future build cycle prep</strong></span>
+		      <img src="images/integratedframe.jpg" alt="Project 3" class="timeline-thumb" onclick="openModal('modal7')" style="width: 45%;">
 		      <img src="images/frame101.png" alt="Project 3" class="timeline-thumb" onclick="openModal('modal5')" style="width: 45%;">
 		      <img src="images/sandwichpanel.gif" alt="Project 3" class="timeline-thumb" onclick="openModal('modal6')" style="width: 45%;">
 		    </div>
-		    <!-- Add more timeline-items here -->
+			
+	            <div class="timeline-item right">
+		      <span class="date"><strong>Fall 2024: Body System Lead</strong></span>
+		      <img src="images/rollcage_breakout_sim.png" alt="Project 4" class="timeline-thumb" onclick="openModal('modal8')" style="width: 45%;">
+		      <img src="images/matlabstiffnessmatrix.png" alt="Project 4" class="timeline-thumb" onclick="openModal('modal9')" style="width: 45%;">
+		      <img src="images/pedalboxtopplate.png" alt="Project 4" class="timeline-thumb" onclick="openModal('modal10')" style="width: 45%;">
+		    </div>
+
+			  
 		  </div>
 		</section>
 
@@ -132,6 +142,39 @@
 		    <p>Starting the new build cycle, I set out to bring composites into our chassis design to boost stiffness-to-weight performance and grow our team’s understanding of composite structures. Using Ansys Mechanical’s ACP tools, I explored carbon fiber–foam panel simulations and testing setups like 3-point bending to guide future designs.</p>
 		  </div>
 		</div>
+
+		<div id="modal7" class="modal" onclick="closeModal('modal7')">
+		  <div class="modal-content" onclick="event.stopPropagation();">
+		    <span class="close-button" onclick="closeModal('modal7')">&times;</span>
+		    <img src="images/integratedframe.jpg" alt="Large Project 7" style="width: 45%;">
+		    <p>The culmination of my team's hard work during the build cycle was when we integrated the systems of the car for the FSGP competition. This picture showcases the dynamics, electromechanical, ergonomics, and electrical systems integrated onto the frame.</p>
+		  </div>
+		</div>
+
+		<div id="modal8" class="modal" onclick="closeModal('modal8')">
+		  <div class="modal-content" onclick="event.stopPropagation();">
+		    <span class="close-button" onclick="closeModal('modal8')">&times;</span>
+		    <img src="images/integratedframe.jpg" alt="Large Project 8" style="width: 45%;">
+		    <p>I kicked off the build cycle by overhauling our design and simulation workflow. After inheriting the Frame Lead role as a freshman and having an unoptimized FEA setup in place, I focused on breaking down complex failure points with more targeted breakout sims. I also used sweep meshing and the 3-2-1 support method for more reliable results. This helped speed up runtimes and make it easier to pinpoint areas of high stress with a more conservative FEA setup.</p>
+		  </div>
+		</div>
+
+		<div id="modal9" class="modal" onclick="closeModal('modal9')">
+		  <div class="modal-content" onclick="event.stopPropagation();">
+		    <span class="close-button" onclick="closeModal('modal9')">&times;</span>
+		    <img src="images/integratedframe.jpg" alt="Large Project 9" style="width: 45%;">
+		    <p>While taking a MATLAB class in the fall, I saw an opportunity to apply what I was learning to my Frame simulation work, by writing a script to generate stiffness matrices from tube geometric and material properties. This let us simulate only the occupant cell while mimicking the rest of the chassis with body-ground joints, cutting runtime by over 260% without sacrificing accuracy (from multiple hours to sub one).</p>
+		  </div>
+		</div>
+
+		<div id="modal10" class="modal" onclick="closeModal('modal10')">
+		  <div class="modal-content" onclick="event.stopPropagation();">
+		    <span class="close-button" onclick="closeModal('modal10')">&times;</span>
+		    <img src="images/integratedframe.jpg" alt="Large Project 10" style="width: 45%;">
+		    <p>On the Ergonomics side, I redesigned the pedal box for tighter packaging and a higher pedal ratio, improving both feel and response. I also helped research and draft our upcoming three-piece chopped carbon fiber steering wheel. Shown here is the top structure plate I designed, with pocketing for strength-to-weight optimization and reinforced areas around low-profile bolt holes to prevent tear-out while minimizing material use.</p>
+		  </div>
+		</div>
+		
 	    
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
