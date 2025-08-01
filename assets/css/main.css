@@ -3286,6 +3286,28 @@ input, select, textarea {
 	margin-bottom: 1.2em;
 }
 
+/* Optional: Overlay to improve text visibility */
+#experience-header::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5); /* Adjust transparency */
+	z-index: 1;
+}
+
+/* Ensures header content appears above overlay */
+#experience-header > * {
+	position: relative;
+	z-index: 2;
+}
+
+/* Header h1 styles */
+#experience-header h1 {
+	font-size: 4.5re
+
 
 /* Responsive styling */
 @media screen and (max-width: 736px) {
