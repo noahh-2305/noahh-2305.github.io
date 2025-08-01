@@ -12,8 +12,8 @@
 		
 	</head>
 <!--test test one two three fo-->
-  <header id="project-header">
-	<h1>My Professional Experience</h1></h1>
+  <header id="experience-header">
+	<h1><strong>My Professional Experience</strong></h1>
 	<p>Check out my deep dives into industry.</a></p>
   </header>
 <!-- Hamburger Icon -->
@@ -61,7 +61,7 @@
 			
 			<!-- Overlay Viewer -->
 			<div id="pdfOverlay" class="overlay hidden">
-			  <span class="close-btn" onclick="closePDF()">×</span>
+			  <span class="close-btn" onclick="closePDF1()">×</span>
 			  <iframe src="documents/1stWorkTermReport.pdf" class="pdf-viewer" allowfullscreen></iframe>
 			  <a href="documents/1stWorkTermReport.pdf" download class="download-btn">Download PDF</a>
 			</div>
@@ -81,19 +81,20 @@
 		    </p>
 		  </div>
 		<div class="project-image">
-		    <img src="images/teamdaimler.jpg" alt="Project Image" style="width: 150%;"/>
+		    <img src="images/teamdaimler.jpg" alt="Project Image" style="width: 200%;"/>
+		    <img src="images/ptmmascot.png" class="my-scaled-img" />
 		  </div>
 	       </section>
 		<section class="pdf-section">
 		  <!-- Thumbnail (Left Side Text + Image Style) -->
 			<div class="pdf-thumbnail-container">
-			  <img src="images/wta2.png" alt="Academic Report" id="pdfThumb" class="zoomable-thumbnail" />
+			  <img src="images/wta2.png" alt="Academic Report" id="pdfThumb2" class="zoomable-thumbnail" />
 			  <p class="pdf-caption">Work Term Assignment: 2nd Term</p>
 			</div>
 			
 			<!-- Overlay Viewer -->
-			<div id="pdfOverlay" class="overlay hidden">
-			  <span class="close-btn" onclick="closePDF()">×</span>
+			<div id="pdfOverlay2" class="overlay hidden">
+			  <span class="close-btn" onclick="closePDF2()">×</span>
 			  <iframe src="documents/2ndWorkTermReport.pdf" class="pdf-viewer" allowfullscreen></iframe>
 			  <a href="documents/2ndWorkTermReport.pdf" download class="download-btn">Download PDF</a>
 			</div>
@@ -156,8 +157,18 @@
 		  document.getElementById('pdfOverlay').classList.remove('hidden');
 		});
 		
-		function closePDF() {
+		function closePDF1() {
 		  document.getElementById('pdfOverlay').classList.add('hidden');
+		}
+		</script>
+
+		<script>
+		document.getElementById('pdfThumb2').addEventListener('click', () => {
+		  document.getElementById('pdfOverlay2').classList.remove('hidden');
+		});
+		
+		function closePDF2() {
+		  document.getElementById('pdfOverlay2').classList.add('hidden');
 		}
 		</script>
 

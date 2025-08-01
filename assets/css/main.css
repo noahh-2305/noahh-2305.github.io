@@ -3087,6 +3087,102 @@ input, select, textarea {
 }
 
 /* Optional: Overlay to improve text visibility */
+#experience-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adjust transparency */
+  z-index: 1;
+}
+
+/* Ensures header content appears above overlay */
+#experience-header > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Header h1 styles */
+#experience-header h1 {
+  font-size: 4.5rem;
+  margin-bottom: 0.2em;
+}
+
+/* Link inside h1 */
+#experience-header h1 a {
+  border: 0;
+}
+
+/* Subheader paragraph styles */
+#experience-header p {
+  font-size: 1.5rem;
+  margin-bottom: 1.2em;
+  color: white !important;
+  font-weight: 700;
+}
+
+/* Optional nav styles if you want a menu here */
+#experience-header nav {
+  font-family: Raleway, Helvetica, sans-serif;
+  font-size: 0.8em;
+  font-weight: 700;
+  height: 3em;
+  letter-spacing: 0.1em;
+  line-height: 3em;
+  position: absolute;
+  right: 0.7em;
+  text-transform: uppercase;
+  top: 0.7em;
+}
+
+#experience-header nav a {
+  border: 0;
+  display: inline-block;
+  padding: 0 1em;
+}
+
+#experience-header nav a:before {
+  float: right;
+  margin-left: 0.75em;
+}
+
+#experience-header nav a[href="#menu"] {
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 5px;
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.125);
+  padding: 0 1.35em;
+}
+
+#experience-header nav a[href="#menu"]:before {
+  content: '\f0c9';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  text-rendering: auto;
+}
+
+#experience-header nav a[href="#menu"]:hover {
+  background-color: rgba(255, 255, 255, 0.025);
+}
+
+#experience-header nav a[href="#menu"]:active {
+  background-color: rgba(255, 255, 255, 0.075);
+}
+
+#experience-header.alt {
+  background-color: transparent;
+}
+
+#experience-header.alt h1 {
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+
+/* Optional: Overlay to improve text visibility */
 #header::before {
 	content: '';
 	position: absolute;
@@ -3286,27 +3382,7 @@ input, select, textarea {
 	margin-bottom: 1.2em;
 }
 
-/* Optional: Overlay to improve text visibility */
-#experience-header::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(0, 0, 0, 0.5); /* Adjust transparency */
-	z-index: 1;
-}
 
-/* Ensures header content appears above overlay */
-#experience-header > * {
-	position: relative;
-	z-index: 2;
-}
-
-/* Header h1 styles */
-#experience-header h1 {
-	font-size: 4.5re
 
 
 /* Responsive styling */
@@ -4327,4 +4403,14 @@ hr.major:after {
   color: #ffffff;
   font-weight: 500;
 }
+
+.my-scaled-img {
+  image-rendering: crisp-edges; /* Or: pixelated; */
+}
+
+.my-scaled-img {
+  transform: scale(2) translateY(20px); /* or -10px to move up */
+  transform-origin: center;
+}
+
 
