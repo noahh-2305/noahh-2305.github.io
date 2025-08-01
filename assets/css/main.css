@@ -4404,3 +4404,12 @@ hr.major:after {
   font-weight: 500;
 }
 
+.my-scaled-img {
+  image-rendering: crisp-edges; /* Or: pixelated; */
+}
+
+.my-scaled-img {
+  transform: scale(2);
+  transform-origin: center;
+}
+
