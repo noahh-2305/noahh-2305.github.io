@@ -81,19 +81,19 @@
 		    </p>
 		  </div>
 		<div class="project-image">
-		    <img src="images/teamdaimler.jpg" alt="Project Image" style="width: 400%;"/>
+		    <img src="images/teamdaimler.jpg" alt="Project Image" style="width: 200%;"/>
 		    <img src="images/ptmmascot.png" alt="Project Image"/>
 		  </div>
 	       </section>
 		<section class="pdf-section">
 		  <!-- Thumbnail (Left Side Text + Image Style) -->
 			<div class="pdf-thumbnail-container">
-			  <img src="images/wta2.png" alt="Academic Report" id="pdfThumb" class="zoomable-thumbnail" />
+			  <img src="images/wta2.png" alt="Academic Report" id="pdfThumb2" class="zoomable-thumbnail" />
 			  <p class="pdf-caption">Work Term Assignment: 2nd Term</p>
 			</div>
 			
 			<!-- Overlay Viewer -->
-			<div id="pdfOverlay" class="overlay hidden">
+			<div id="pdfOverlay2" class="overlay hidden">
 			  <span class="close-btn" onclick="closePDF()">×</span>
 			  <iframe src="documents/2ndWorkTermReport.pdf" class="pdf-viewer" allowfullscreen></iframe>
 			  <a href="documents/2ndWorkTermReport.pdf" download class="download-btn">Download PDF</a>
@@ -159,6 +159,16 @@
 		
 		function closePDF() {
 		  document.getElementById('pdfOverlay').classList.add('hidden');
+		}
+		</script>
+
+		<script>
+		document.getElementById('pdfThumb2').addEventListener('click', () => {
+		  document.getElementById('pdfOverlay2').classList.remove('hidden');
+		});
+		
+		function closePDF() {
+		  document.getElementById('pdfOverlay2').classList.add('hidden');
 		}
 		</script>
 
