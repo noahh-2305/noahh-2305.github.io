@@ -4287,3 +4287,22 @@ hr.major:after {
   background-color: #f0f0f0;
 }
 
+.pdf-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 40px 0;
+}
+
+.pdf-thumbnail-container {
+  text-align: center;
+}
+
+.pdf-caption {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+}
+
