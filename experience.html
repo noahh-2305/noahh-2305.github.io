@@ -37,7 +37,7 @@
 
 	       <section class="project-single-section">
 		  <div class="project-image">
-		    <img src="images/teamdaimler.jpg" alt="Project Image" style="width: 80%;"/>
+		    <img src="images/img1.jpg" alt="Project Image"/>
 		  </div>
 		  <div class="project-text">
 		    <h2><strong>Volvo Group: Powertrain Integration Co-Op (Spring 2025)</strong></h2>
@@ -64,6 +64,38 @@
 			  <span class="close-btn" onclick="closePDF()">×</span>
 			  <iframe src="documents/1stWorkTermReport.pdf" class="pdf-viewer" allowfullscreen></iframe>
 			  <a href="documents/1stWorkTermReport.pdf" download class="download-btn">Download PDF</a>
+			</div>
+		</section>
+
+	<section class="project-single-section">
+		  <div class="project-text">
+		    <h2><strong>Daimler Truck North America: Product Testing Mechatronics Intern (Summer 2025)</strong></h2>
+		    <p>
+		      For my second term in the UT Engineering Co-Op Program, I joined the Product Testing Mechatronics team at the Daimler Truck North America headquarters in Portland, OR. During my three-month internship, my main project centered around enhancing the functionality of the department’s internal data analysis platform, GoDAP (Go Daimler Analysis Platform). I developed a system to transcribe audio files recorded during vehicle trigger events, allow for trigger indexing based on keyword detection run on those transcriptions, and extract any other potentially useful metadata from the trigger packages. The goal was to make it easier for test engineers to navigate and interpret vehicle data as they diagnosed and worked on their respective features.
+		    </p>
+		    <p>
+		      This project included the use of advanced language and semantic models such as OpenAI's Whisper transcription model for transcribing the audio files and a custom-trained DistilBERT classifier model to clean transcriptions for viewing on the front-end of the GoDAP platform. I also utilized psycopg2 to create tables and query data from the platform's PostgreSQL backend, as well as Portainer for deploying Linux-based containers of my code by creating Docker images. Additional libraries I used within this project include PyTorch, scikit-learn, Librosa, transformers, and many more.  
+		    </p>
+	            <p>
+		      You can view my second work term report to learn more about my work at Daimler and my wrap-up of my time in the Co-Op program.
+		    </p>
+		  </div>
+		<div class="project-image">
+		    <img src="images/teamdaimler.jpg" alt="Project Image" style="width: 110%;"/>
+		  </div>
+	       </section>
+		<section class="pdf-section">
+		  <!-- Thumbnail (Left Side Text + Image Style) -->
+			<div class="pdf-thumbnail-container">
+			  <img src="images/wta2.png" alt="Academic Report" id="pdfThumb" class="zoomable-thumbnail" />
+			  <p class="pdf-caption">Work Term Assignment: 2nd Term</p>
+			</div>
+			
+			<!-- Overlay Viewer -->
+			<div id="pdfOverlay" class="overlay hidden">
+			  <span class="close-btn" onclick="closePDF()">×</span>
+			  <iframe src="documents/2ndWorkTermReport.pdf" class="pdf-viewer" allowfullscreen></iframe>
+			  <a href="documents/2ndWorkTermReport.pdf" download class="download-btn">Download PDF</a>
 			</div>
 		</section>
 
