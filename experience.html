@@ -13,8 +13,8 @@
 	</head>
 
   <header id="project-header">
-  						<h1>My Professional Experience</h1></h1>
-  						<p>Check out my deep dives into industry.</a></p>
+	<h1>My Professional Experience</h1></h1>
+	<p>Check out my deep dives into industry.</a></p>
   </header>
 <!-- Hamburger Icon -->
   			<div id="hamburger" class="hamburger">
@@ -35,7 +35,41 @@
   			  </nav>
   			</div>
 
-  <script src="assets/js/jquery.min.js"></script>
+	       <section class="project-single-section">
+		  <div class="project-image">
+		    <img src="images/truk.jpg" alt="Project Image" style="width: 80%;"/>
+		  </div>
+		  <div class="project-text">
+		    <h2><strong>Volvo Group: Powertrain Integration Co-Op (Spring 2025)</strong></h2>
+		    <p>
+		      For my first of two terms in the UT Engineering Co-Op Program, I was hired to join the Powertrain Systems Integration team at the Volvo Trucks North America headquarters in Greensboro, NC. My primary role was centered on troubleshooting powertrain-related fault codes by collecting vehicle data and conducting root cause analysis across hardware components, electrical harnesses, and software logic. I frequently used ATI Vision and Vector CANalyzer to interface with the truck’s CAN buses, extract sensor and circuit data, and trace faults through Simulink-based system logic. Depending on the issue, I also performed hands-on tasks, like swapping sensors, tracking down leaks, and even using a multimeter to verify voltage and current values in key circuits.
+		    </p>
+		    <p>
+		      Additionally, during my team's daily stand-up meetings, I continued to notice how much useful data my team collected daily, yet struggled to keep track of as projects and tasks grew. Having an organized backlog of data would enable my team to compare current problems to similar previous issues, which would greatly help our troubleshooting efforts and reduce the time needed to do so. Using Python, I built a tool that stores key signals in .pkl files and utilized common libraries like Pandas, NumPy, tkinter, and matplotlib to generate clear, side-by-side comparisons across trucks and software versions. This tool significantly accelerated our root cause analysis efforts, as it helped cut troubleshooting time by more than half by helping us identify patterns and reference prior issues as we investigated issues.
+		    </p>
+	            <p>
+			If you'd like to read more about my experience at Volvo, you can view my first term's academic report for more in-depth project details.
+		    </p>
+		  </div>
+	       </section>
+		<section class="pdf-section">
+		  <!-- Thumbnail (Left Side Text + Image Style) -->
+			<div class="pdf-thumbnail-container">
+			  <img src="images/wta1.png" alt="Academic Report" id="pdfThumb" class="zoomable-thumbnail" />
+			  <p class="pdf-caption">Work Term Assignment: 1st Term</p>
+			</div>
+			
+			<!-- Overlay Viewer -->
+			<div id="pdfOverlay" class="overlay hidden">
+			  <span class="close-btn" onclick="closePDF()">×</span>
+			  <iframe src="documents/1stWorkTermReport.pdf" class="pdf-viewer" allowfullscreen></iframe>
+			  <a href="documents/1stWorkTermReport.pdf" download class="download-btn">Download PDF</a>
+			</div>
+		</section>
+
+		
+
+			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
@@ -83,6 +117,16 @@
 		    lightbox.style.display = "none";
 		    lightboxImg.src = "";
 		  });
+		</script>
+
+		<script>
+		document.getElementById('pdfThumb').addEventListener('click', () => {
+		  document.getElementById('pdfOverlay').classList.remove('hidden');
+		});
+		
+		function closePDF() {
+		  document.getElementById('pdfOverlay').classList.add('hidden');
+		}
 		</script>
 
 </html>
