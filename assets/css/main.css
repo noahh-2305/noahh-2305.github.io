@@ -4315,10 +4315,12 @@ hr.major:after {
 }
 
 .project-image img {
+  display: block; 
   max-width: 100%;
   height: auto;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin: 1rem auto;     /* top/bottom spacing + auto left/right centers */
 }
 
 /* Thumbnail styling */
@@ -4412,5 +4414,6 @@ hr.major:after {
   transform: scale(2) translateY(40px); /* or -10px to move up */
   transform-origin: center;
 }
+
 
 
