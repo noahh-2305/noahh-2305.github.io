@@ -4315,7 +4315,9 @@ hr.major:after {
 }
 
 .project-image img {
-  max-width: 100%;
+  display: block;        /* make them block-level */
+  margin: 1rem auto;     /* top/bottom spacing + auto left/right centers */
+  max-width: 100%;       /* ensures they don’t overflow container */
   height: auto;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -4412,5 +4414,7 @@ hr.major:after {
   transform: scale(2) translateY(40px); /* or -10px to move up */
   transform-origin: center;
 }
+
+
 
 
