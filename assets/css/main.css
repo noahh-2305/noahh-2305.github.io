@@ -4415,6 +4415,30 @@ hr.major:after {
   transform-origin: center;
 }
 
+.confluence-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  margin-top: 0.5em;
+  padding: 0.6em 1.2em;
+  border: 1.5px solid currentColor;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
 
+.confluence-link:hover {
+  background-color: currentColor;
+  color: #fff; /* adjust to match your site's background color */
+}
+
+.confluence-link .arrow {
+  transition: transform 0.25s ease;
+}
+
+.confluence-link:hover .arrow {
+  transform: translateX(4px);
+}
 
 
