@@ -45,7 +45,8 @@
 		    <div class="timeline-line"></div>
 		
 		    <div class="timeline-item left">
-		      <span class="date"><strong>Fall 2025: Engine Calibration Lead</strong></span>
+		      <span class="date"><strong>Fall and Spring 2025: Engine Calibration Lead</strong></span>
+			  <img src="images/engineteardown.jpg" alt="Project 13" class="timeline-thumb" onclick="openModal('modal13')" style="width: 50%;">
 		      <img src="images/injectorcad.png" alt="Project 11" class="timeline-thumb" onclick="openModal('modal11')" style="width: 45%;">
 			  <img src="images/BSFCmap.png" alt="Project 12" class="timeline-thumb" onclick="openModal('modal12')" style="width: 75%;">
 		    </div>
@@ -244,6 +245,14 @@
 		    <span class="close-button" onclick="closeModal('modal12')">&times;</span>
 		    <img src="images/BSFCmap.png" alt="Large Project 12" style="width: 60%;">
 		    <p>With the fuel flow numbers from my injector characterization stand, along with corresponding torque and HP numbers at the same engine speed from our dyno testing, I was able to graph the BSFC using interpolation to find the BSFC for every torque and RPM value.</p>
+		  </div>
+		</div>
+
+		<div id="modal13" class="modal" onclick="closeModal('modal13')">
+		  <div class="modal-content" onclick="event.stopPropagation();">
+		    <span class="close-button" onclick="closeModal('modal13')">&times;</span>
+		    <img src="images/engineteardown.jpg" alt="Large Project 13" style="width: 60%;">
+		    <p>To test the power gains of high-compression pistons and longer duration race cams, I performed engine teardowns to clean internals, analyze hardware condition, and install new parts for testing. Throughout teardown, I employed new lubricants, verified pre-load torques, and rebuilt the engine to test on our dyno.</p>
 		  </div>
 		</div>
 		
